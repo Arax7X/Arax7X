@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://satellite-globe.vercel.app"><img src="https://img.shields.io/badge/Live_demo-Orbit-6ee7f9?style=for-the-badge&labelColor=090f2b" alt="Live demo: Orbit"></a>
   <a href="https://github.com/Arax7X/orbit-core"><img src="https://img.shields.io/badge/Open_source-Orbit_Core-ff6b8b?style=for-the-badge&labelColor=090f2b" alt="Open source: Orbit Core"></a>
+  <a href="https://github.com/Arax7X/satpass"><img src="https://img.shields.io/badge/Library-satpass-6ee7f9?style=for-the-badge&labelColor=090f2b" alt="Library: satpass"></a>
 </p>
 
 ### Hi, I'm Anastacia 👋
@@ -13,20 +14,37 @@ I write and maintain the trading and banking software that investment and
 commercial banks around the world run every day. Outside of that I build tools
 for space, and I'm learning Linux and security in public.
 
-## 🛰️ Featured: Orbit Core
+## 🛰️ Orbit Core
 
 **A live 3D globe of every active satellite, with pass predictions for any city.**
+
+<a href="https://satellite-globe.vercel.app"><img src="assets/orbit-screenshot.jpg" width="100%" alt="Orbit Core: a globe covered in satellites, with the next ISS passes over London listed beside it, two of them marked visible to the eye"></a>
 
 It runs entirely in your browser. It downloads the current orbit data for more
 than ten thousand satellites, works out where each one is right now, and draws
 them all on a globe you can spin. Type in a city and it tells you when a
 satellite will pass overhead, and whether you can see it with your own eyes.
 
-**[▶ Try it live](https://satellite-globe.vercel.app)** &nbsp;·&nbsp; **[Read the code](https://github.com/Arax7X/orbit-core)** &nbsp;·&nbsp; MIT licensed, so you can use it in your own project
+**[▶ Try it live](https://satellite-globe.vercel.app)** &nbsp;·&nbsp; **[Read the code](https://github.com/Arax7X/orbit-core)** &nbsp;·&nbsp; MIT licensed
 
-## 🔭 What's next
+## 🔭 satpass
 
-- A small pass-prediction library you can install and use anywhere
+**When can I see that satellite?** A library and command-line tool that
+predicts satellite passes, says which ones you can see with the naked eye, and
+estimates how bright they will be. It is checked against Skyfield on 172
+passes, and its rise and set times agree to within half a second.
+
+<a href="https://github.com/Arax7X/satpass"><img src="assets/satpass-terminal.svg" width="100%" alt="satpass listing the ISS passes you can see from London, with times, directions and brightness"></a>
+
+```sh
+npx github:Arax7X/satpass 25544 --lat 51.5072 --lon -0.1276 --visible
+```
+
+**[Read the code](https://github.com/Arax7X/satpass)** &nbsp;·&nbsp; Node.js and the browser &nbsp;·&nbsp; MIT licensed
+
+## 🧭 What's next
+
+- More open tools for people who watch satellites
 - Linux and security labs, with a write-up for each one
 
 ## 🧰 What I build with
